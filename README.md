@@ -1,24 +1,18 @@
-# README
+# URL
+https://ancient-garden-06092.herokuapp.com/
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+herokuにて公開しています。
 
-Things you may want to cover:
+スマホ、タブレット等、レスポンシブデザインに対応しています。
 
-* Ruby version
+# Name memo_APP
+ブログ投稿できる簡易アプリです。
+gem "devise"を使用してログイン、ログアウト実装しています。
 
-* System dependencies
+# DEMO
+ヘッダーの新規登録から、ユーザー登録して
+記事を投稿してください。
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Note
+rails 5.2.3
+ruby 2.6.6
