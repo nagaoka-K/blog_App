@@ -1,0 +1,11 @@
+  <%= form_with model:@post, class:"form-floating col-md-8 mx-auto", local:true do |form| %>
+    <div class="form-floating">
+      <%= form.text_area :title, placeholder: :タイトル, class:"form-control col-12", style:"resize: none;" %>
+      <label for="floatingTextarea">タイトル：</label>
+    </div>
+    <div class="form-floating">
+      <%= form.text_area :content, placeholder: :ブログ本文, class:"form-control col-12 mt-3", style:"height: 50%; resize: none;" %>
+      <label for="floatingTextarea2">ブログ本文：</label>
+    </div>
+    <%= form.submit "投稿する", class:"col-12 d-block mt-3 btn btn-secondary" %>
+  <% end %>

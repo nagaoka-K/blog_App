@@ -1,0 +1,13 @@
+    <% @posts.each do |post| %>
+    <div class="border my-3" >
+      <div>
+        投稿日時：<%= post.created_at.strftime("%F %r") %>
+      </div>
+      <div>
+        タイトル：<%= link_to post.title, post_path(post.id) %>
+      </div>
+      <div>
+        投稿者：<%= link_to post.user.nickname, user_path(post.user) %>
+      </div>
+    </div>
+    <% end %>

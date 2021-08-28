@@ -1,0 +1,5 @@
+  <%= form_with model:@post, class:"col-md-8 mx-auto", local:true do |form| %>
+    <%= form.text_field :title, placeholder: :タイトル, class:"col-12 d-block mt-3" %>
+    <%= form.text_area :content, placeholder: :ブログ本文, class:"col-12 d-block mt-3" %>
+    <%= form.submit "投稿する", class:"col-md-12 d-block mt-3" %>
+  <% end %>
